@@ -154,7 +154,7 @@ If you try to call this field in your template like this…
 <?= $page->image()->toFile() ?>
 ```
 
-…you will probably be very surprised to get no result at all. That is because the `image()` method is a native Kirby method that will fetch the first image it finds in the file system. And since a file object doesn't have a `toFile()` method, the above code will not echo anything, unless your file meta data has a field with that name. Since there a quite a few native Kirby methods and plugins might add even more, it is easy to accidentally pick such a method as your field name.
+…you will probably be very surprised to get no result at all. That is because the `image()` method is a native Kirby method that will fetch the first image it finds in the file system. And since a file object doesn't have a `toFile()` method, the above code will not echo anything, unless your file meta data has a field with that name. Since there are quite a few native Kirby methods and plugins might add even more, it is easy to accidentally pick such a method as your field name.
 
 You can do one of two things to solve this:
 
